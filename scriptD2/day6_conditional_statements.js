@@ -1,4 +1,3 @@
-
 //if else
 
     let age = 19
@@ -27,31 +26,33 @@ let age1 = 61
 age1>=18&&age1<=60 ? console.log("Adult") : console.log("Senior Citizen")
 
 //for loops
-
+console.log("for loops")
 for(let i=0;i<10;i++){
     console.log(i)
 }
 
 //while loops
-
+console.log("while loops")
 let z=0
 while(z<10){
     console.log(z)
     z++
 }
 
-// for loops for of
-console.log("for loops for of")
+// for loops and for of
+//console.log("for loops for of")
 let marks = [22,33,44,55,66]
-
+console.log("3rd element from array using loops")
 console.log(marks[2])
 
 //classical
+console.log("classical for loops")
 for(let i=0;i<marks.length;i++){
     console.log(marks[i])
 }
 
 //for of
+console.log("for of loops")
 for(const i of marks){
     console.log(i)
 }
