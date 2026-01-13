@@ -1,0 +1,24 @@
+function searchitems(itemName){
+    console.log(`Searching items ${itemName}`)
+    return `item id : ${itemName}10`
+}
+
+function addToCart(itemID){
+    console.log(`Adding item id with id as ${itemID} to the cart`)
+    return `cartId: ${itemID}`
+}
+
+function checkOutCart(cartID){
+    console.log(`Checking out item placed in cartId ${cartID}`)
+    return `CheckOutId : ${cartID}`
+}
+
+function makePayment(checkOutID){
+    console.log(`Making payment for checkout id as ${checkOutID}`)
+    return `paymentId is generated is : ${checkOutID}`
+}
+
+const itemID = searchitems("IPhone")
+const cartID = addToCart(itemID)
+const checkOutID = checkOutCart(cartID)
+const paymentID = makePayment(checkOutID) 

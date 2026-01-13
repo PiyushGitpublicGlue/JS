@@ -1,0 +1,27 @@
+function searchitems(itemName,fn1){
+    console.log(`Searching items ${itemName}`)
+    const itemID = `item id : ${itemName}10`
+    fn1(itemID,checkOutCart)
+}
+
+function addToCart(itemID,fn2){
+    console.log(`Adding item id with id as ${itemID} to the cart`)
+    const cartID = `cartId: ${itemID}`
+    fn2(cartID,makePayment)
+}
+
+function checkOutCart(cartID,fn3){
+    console.log(`Checking out item placed in cartId ${cartID}`)
+    const checkOutID = `CheckOutId : ${cartID}`
+    fn3(checkOutID)
+}
+
+function makePayment(checkOutID){
+    console.log(`Making payment for checkout id as ${checkOutID}`)
+    return `paymentId is generated is : ${checkOutID}`
+}
+
+searchitems("IPhone",addToCart)
+
+
+
